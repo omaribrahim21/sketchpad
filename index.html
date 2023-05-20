@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <title>SketchPad</title>
-        <link rel="stylesheet" href="style_sheet.css"/>
+        <link rel="stylesheet" href="styleSheet.css"/>
     </head>
     <body>
         <button>number of squares</button>
@@ -18,13 +18,15 @@
         var m = 16;
         
         function createtiles(a, b){
-            for (i = 0; i<a; i++){
-                var columnDiv = document.createElement("div");
+            for (var i = 0; i<a; i++){
+                var columnDiv = document.createElement('div');
                 columnDiv.classList.add('col');
                 const container = document.quereySelector('.container');
                 container.appendChild(columnDiv);
-                for (j = 0; j<b; j++){
-                    
+                for (var j = 0; j<b; j++){
+                    var rowDiv = document.createElement('div');
+                    rowDiv.classList.add('row');
+                    columnDiv.appendChild(rowDiv);
                 }
             }
         }
