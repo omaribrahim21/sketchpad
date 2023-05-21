@@ -6,7 +6,7 @@ div.col {
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 800px;
     background-color: black;
     border: 1px solid black;
 }
@@ -15,7 +15,7 @@ div.row {
     flex: 1;
     height: 5px;
     background-color: red;
-    border: 1px solid red;
+    border: 1px solid green;
 }
 
 button {
