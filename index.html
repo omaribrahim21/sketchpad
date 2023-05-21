@@ -5,30 +5,39 @@
         <meta charset="utf-8">
         <title>SketchPad</title>
         <link rel="stylesheet" href="styleSheet.css"/>
+        
     </head>
     <body>
-        <button>number of squares</button>
+        <button id="btn">number of squares</button>
         <div class="container">
 
         </div>
+
+        <script>
+            var n = 16;
+            var m = 16;
+            //loops work fine
+            //every element is added in, all row elements are children of their parents
+
+            //function createtiles(a, b){
+                for (var i = 0; i<16; i++){
+                    var columnDiv = document.createElement('div');
+                    columnDiv.classList.add('col');
+                    const container = document.querySelector('.container');
+                    container.appendChild(columnDiv);
+                    console.log(i);
+                    for (var j = 0; j<16; j++){
+                        console.log(j);
+                        var rowDiv = document.createElement('div');
+                        rowDiv.classList.add('row');
+                        columnDiv.appendChild(rowDiv);
+                    }
+                }
+            //}
+            //document.getElementById('btn').addEventListener('click', createtiles(16 ,16));
+                                                    
+        </script>
+
     </body>
 
-    <script>
-        var n = 16;
-        var m = 16;
-        
-        function createtiles(a, b){
-            for (var i = 0; i<a; i++){
-                var columnDiv = document.createElement('div');
-                columnDiv.classList.add('col');
-                const container = document.quereySelector('.container');
-                container.appendChild(columnDiv);
-                for (var j = 0; j<b; j++){
-                    var rowDiv = document.createElement('div');
-                    rowDiv.classList.add('row');
-                    columnDiv.appendChild(rowDiv);
-                }
-            }
-        }
-    </script>
 </html>

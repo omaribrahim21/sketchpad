@@ -6,8 +6,8 @@ div.col {
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 5px;
-    background-color: red;
+    height: 100%;
+    background-color: black;
     border: 1px solid black;
 }
 
@@ -15,5 +15,9 @@ div.row {
     flex: 1;
     height: 5px;
     background-color: red;
-    border: 1px solid black;
+    border: 1px solid red;
+}
+
+button {
+    color: red;
 }
